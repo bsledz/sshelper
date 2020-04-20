@@ -1,0 +1,50 @@
+<!DOCTYPE html>   
+<html> 
+    
+<head>
+    <meta charset="UTF-8">
+    <title>ABNHelper</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+    <link rel="stylesheet" href="assets/main.css"/>
+    <!-- Compiled and minified JavaScript -->
+    <!-- Insert this line above script imports  -->
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <script src="assets/jquery-3.5.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="assets/script.js"></script>
+    <!-- Insert this line after script imports -->
+    <script>if (window.module) module = window.module;</script>
+
+</head>  
+   
+<body class="grey darken-4">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col m7 l10" id="img-container">
+
+            <img src="assets/white.png"/>
+
+        </div>
+        <div class="col m5 l2" id="cmd-container" style="overflow-y:scroll;height:100vh">
+            <center><h3>AutoSSHelper</h3></center>
+            <div class="coords">
+
+                <span id="pixel">  </span><span id="colorRGB">rgb(34,20,43)</span>
+                [<span id="xCoords"></span>, <span id="yCoords"></span>]
+
+            </div>
+
+            <div class="events" id="sortable">
+            </div>
+        </div>
+    </div>
+</div>
+
+<canvas id="cs"></canvas>
+
+</body>   
+</html>
